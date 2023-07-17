@@ -14,3 +14,14 @@
 - `pip freeze > requirements.txt`
 2. To install the same packages
 - `pip install -r requirements.txt`
+
+## Run FastAPI application using Uvicorn
+`uvicorn main:app --reload`
+
+## Run FastAPI application using Uvicorn with specific listening host and port
+`uvicorn main:app --host 0.0.0.0 --port 8080 --reload`
+
+## To see the docs, go to below page:
+host:port/docs
+host:port/redoc
+host:port/openapi.json
